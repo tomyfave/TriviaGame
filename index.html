@@ -1,0 +1,60 @@
+<html>
+<head>
+
+    <title>OKC Trivia</title>
+    
+    <script src="assets/javascript/game.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>    
+<body onload="handleStartTimer();">
+    <!-----div id = "wrapper div"--->
+        <form id="quiz" name = "quiz">
+        <img src="assets/images/Okc_logo.svg" alt="OKC LOGO">
+        <h1>OKC TRIVIA !</h1>
+            
+        <div id="secondsDiv" style="text-align: center ">00:30</div>
+        <!--create times up div to replace alert-->
+        <!--or turn this into a button that displays times up after time runs out-->
+        
+
+        <p>The Thunder are located in Milwaukee?</p>
+            <input type="radio" id = "mc" name ="question1" value = "true" > True <br>
+            <input type="radio" id = "mc" name ="question1" value = "false" > False <br>
+            
+        <p>Kevin Durant abandoned the Thunder to join a super team?</p>
+            <input type="radio" id = "mc" name ="question2" value = "true" > True <br>
+            <input type="radio" id = "mc" name ="question2" value = "false" > False <br>
+            
+        <p>Russell Westbrook averaged a triple double 2 year in a row? </p>
+            <input type="radio" id = "mc" name ="question3" value = "true" > True <br>
+            <input type="radio" id = "mc" name ="question3" value = "false" > False <br>
+            
+        <p>The OKC Thunder were once called the Seattle Super Sonics?</p>
+            <input type="radio" id = "mc" name ="question4" value = "true" > True <br>
+            <input type="radio" id = "mc" name ="question4" value = "false" > False <br>
+    
+        <p>The Thunders mascot is an eagle?</p>
+            <input type="radio" id = "mc" name ="question5" value = "true" > True <br>
+            <input type="radio" id = "mc" name ="question5" value = "false" > False <br>
+        
+        <input id = "button" type = "button" value = "I'm finished!" onclick = "check();">
+    
+        
+    </form>
+
+    <div id = "after_submit">
+            <p id = "times_up"></p>
+            <p id = "number_correct"></p>
+            <p id = "number_incorrect"></p>
+            <!-----p id = "message"></p-->
+            <!-----img id = "picture"--->
+            </div>
+            </html>
+        </body>
+    <!----/div>
+
+
+
+    
+</html>
+</body>
